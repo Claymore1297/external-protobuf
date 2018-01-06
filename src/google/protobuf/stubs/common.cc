@@ -63,7 +63,7 @@ namespace protobuf {
 
 namespace internal {
 
-void VerifyVersion(int headerVersion,
+/*void VerifyVersion(int headerVersion,
                    int minLibraryVersion,
                    const char* filename) {
   if (GOOGLE_PROTOBUF_VERSION < minLibraryVersion) {
@@ -90,7 +90,7 @@ void VerifyVersion(int headerVersion,
       << filename << "\".)";
   }
 }
-
+*/
 string VersionString(int version) {
   int major = version / 1000000;
   int minor = (version / 1000) % 1000;

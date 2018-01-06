@@ -117,8 +117,8 @@ static const int kMinHeaderVersionForProtoc = 3000000;
 
 // Verifies that the headers and libraries are compatible.  Use the macro
 // below to call this.
-void LIBPROTOBUF_EXPORT VerifyVersion(int headerVersion, int minLibraryVersion,
-                                      const char* filename);
+//void LIBPROTOBUF_EXPORT VerifyVersion(int headerVersion, int minLibraryVersion,
+  //                                    const char* filename);
 
 // Converts a numeric version number to a string.
 std::string LIBPROTOBUF_EXPORT VersionString(int version);
@@ -129,10 +129,10 @@ std::string LIBPROTOBUF_EXPORT VersionString(int version);
 // to use the protobuf library) to verify that the version you link against
 // matches the headers you compiled against.  If a version mismatch is
 // detected, the process will abort.
-#define GOOGLE_PROTOBUF_VERIFY_VERSION                                    \
-  ::google::protobuf::internal::VerifyVersion(                            \
-    GOOGLE_PROTOBUF_VERSION, GOOGLE_PROTOBUF_MIN_LIBRARY_VERSION,         \
-    __FILE__)
+#define GOOGLE_PROTOBUF_VERIFY_VERSION                                    
+//  ::google::protobuf::internal::VerifyVersion(                            
+  //  GOOGLE_PROTOBUF_VERSION, GOOGLE_PROTOBUF_MIN_LIBRARY_VERSION,         
+  //  __FILE__);
 
 
 // ===================================================================
